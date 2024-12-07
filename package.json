@@ -24,7 +24,7 @@
     "next": "14.2.13",
     "react": "^18",
     "react-dom": "^18",
-    "react-spinners": "^0.15.0",
+    "react-spinners": "^0.13.8",
     "react-twitter-widgets": "^1.11.0"
   },
   "devDependencies": {
