@@ -1,7 +1,8 @@
 import { type InferGetServerSidePropsType, type GetServerSideProps } from 'next'
 import Image from 'next/image'
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { Timeline } from 'react-twitter-widgets'
+import { PulseLoader } from 'react-spinners'
 import useScreenSize from '@/src/hooks/useScreenSize'
 import Swap from '@/src/components/Swap'
 import SocialIcon, { SocialIconProps } from '@/src/components/SocialIcon'
@@ -18,6 +19,7 @@ export type DexHunterProps = InferGetServerSidePropsType<typeof getServerSidePro
 
 export default function Page({ partnerName, partnerCode }: DexHunterProps) {
   const { screenWidth, screenHeight } = useScreenSize()
+  const [xLoading, setXLoading] = useState(true)
 
   const { isMobile } = useMemo(
     () => ({
@@ -84,7 +86,12 @@ export default function Page({ partnerName, partnerCode }: DexHunterProps) {
             width: '690',
             height: screenHeight * 0.45,
           }}
+          onLoad={() => setXLoading(false)}
         />
+
+        <div className='w-[690px] ml-[45%]'>
+          <PulseLoader color='#4f866b' loading={xLoading} />
+        </div>
       </div>
     </main>
   )
