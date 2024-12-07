@@ -2,10 +2,10 @@ import { type InferGetServerSidePropsType, type GetServerSideProps } from 'next'
 import Image from 'next/image'
 import { useMemo } from 'react'
 import { Timeline } from 'react-twitter-widgets'
-import useScreenSize from '@/hooks/useScreenSize'
-import Swap from '@/components/Swap'
-import SocialIcon, { SocialIconProps } from '@/components/SocialIcon'
-import { DEX_HUNTER_PARTNER_CODE, DEX_HUNTER_PARTNER_NAME, POLICY_ID, TICKER } from '@/constants'
+import useScreenSize from '@/src/hooks/useScreenSize'
+import Swap from '@/src/components/Swap'
+import SocialIcon, { SocialIconProps } from '@/src/components/SocialIcon'
+import { DEX_HUNTER_PARTNER_CODE, DEX_HUNTER_PARTNER_NAME, POLICY_ID, TICKER } from '@/src/constants'
 
 export const getServerSideProps = (async () => {
   const partnerName = DEX_HUNTER_PARTNER_NAME

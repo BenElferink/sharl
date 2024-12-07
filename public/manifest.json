@@ -21,6 +21,10 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#FFFFFF"
+  "theme_color": "#FFFFFF",
+  "background_color": "#E9C05D",
+  "developer": {
+    "name": "Ben Elferink",
+    "url": "https://github.com/BenElferink"
+  }
 }

@@ -1,16 +1,27 @@
 {
-  "name": "sharl-coin",
+  "name": "sharl",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sharl.world",
+  "author": "Ben Elferink <ben.elferink@icloud.com> (https://github.com/BenElferink)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BenElferink/sharl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BenElferink/sharl/issues",
+    "email": "ben.elferink@icloud.com"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint-fix": "next lint --fix"
   },
   "dependencies": {
     "@dexhunterio/swaps": "^0.0.108",
-    "@heroicons/react": "^2.1.5",
+    "@heroicons/react": "^2.2.0",
     "next": "14.2.13",
     "react": "^18",
     "react-dom": "^18",
@@ -24,7 +35,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.3",
     "postcss": "^8",
-    "tailwindcss": "^3.4.13",
+    "tailwindcss": "^3.4.16",
     "typescript": "^5"
   }
 }

@@ -1,5 +1,9 @@
-# $SHARL Coin
+# $SHARL
 
 - [Website](https://sharl.world/)
 
-<img src='./docs/preview.png' />
+### V1
+<img src='./docs/preview_old.png' />
+
+### V2
+<img src='./docs/preview_new.png' />
