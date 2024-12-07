@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { type AppProps } from 'next/app'
 import { Fragment } from 'react'
-import '@/src/styles/globals.css'
+import '@/styles/globals.css'
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (

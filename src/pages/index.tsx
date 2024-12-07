@@ -3,10 +3,10 @@ import Image from 'next/image'
 import { useMemo, useState } from 'react'
 import { Timeline } from 'react-twitter-widgets'
 import { PulseLoader } from 'react-spinners'
-import useScreenSize from '@/src/hooks/useScreenSize'
-import Swap from '@/src/components/Swap'
-import SocialIcon, { SocialIconProps } from '@/src/components/SocialIcon'
-import { DEX_HUNTER_PARTNER_CODE, DEX_HUNTER_PARTNER_NAME, POLICY_ID, TICKER } from '@/src/constants'
+import useScreenSize from '@/hooks/useScreenSize'
+import Swap from '@/components/Swap'
+import SocialIcon, { SocialIconProps } from '@/components/SocialIcon'
+import { DEX_HUNTER_PARTNER_CODE, DEX_HUNTER_PARTNER_NAME, POLICY_ID, TICKER } from '@/constants'
 
 export const getServerSideProps = (async () => {
   const partnerName = DEX_HUNTER_PARTNER_NAME

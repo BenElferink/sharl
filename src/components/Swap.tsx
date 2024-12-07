@@ -1,8 +1,8 @@
 import DexHunterSwap from '@dexhunterio/swaps'
 import '@dexhunterio/swaps/lib/assets/style.css'
-import useMount from '@/src/hooks/useMount'
-import { type DexHunterProps } from '@/src/pages'
-import { TOKEN_ID } from '@/src/constants'
+import useMount from '@/hooks/useMount'
+import { type DexHunterProps } from '@/pages'
+import { TOKEN_ID } from '@/constants'
 
 const Swap = ({ partnerName, partnerCode }: DexHunterProps) => {
   const { isMounted } = useMount()
